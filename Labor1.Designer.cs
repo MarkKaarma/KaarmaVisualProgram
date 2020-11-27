@@ -166,6 +166,7 @@
             this.button13.TabIndex = 24;
             this.button13.Text = "Выход";
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button12
             // 
@@ -175,6 +176,7 @@
             this.button12.TabIndex = 23;
             this.button12.Text = "Сброс";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // groupBox1
             // 
@@ -200,6 +202,7 @@
             this.button11.TabIndex = 22;
             this.button11.Text = "Поиск";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // checkBox2
             // 
@@ -274,6 +277,7 @@
             this.button10.TabIndex = 14;
             this.button10.Text = "<<";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -283,6 +287,7 @@
             this.button9.TabIndex = 13;
             this.button9.Text = ">>";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -292,6 +297,7 @@
             this.button8.TabIndex = 12;
             this.button8.Text = "<";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -311,6 +317,7 @@
             this.button6.TabIndex = 10;
             this.button6.Text = "Очистить";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -320,6 +327,7 @@
             this.button5.TabIndex = 9;
             this.button5.Text = "Сортировать";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -329,6 +337,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Удалить";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -338,6 +347,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Добавить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -347,6 +357,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Очистить";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -356,6 +367,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Сортировать";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox2
             // 
@@ -374,6 +386,7 @@
             this.listBox1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.listBox1.Size = new System.Drawing.Size(162, 199);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // richTextBox1
             // 
@@ -389,9 +402,7 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Алфавиту (по возрастанию)",
-            "Алфавиту (по убыванию)",
-            "Длине слова (по возрастанию)",
-            "Длине слова (по убыванию)"});
+            "Алфавиту (по убыванию)"});
             this.comboBox2.Location = new System.Drawing.Point(380, 35);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(162, 21);
@@ -403,14 +414,13 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Алфавиту (по возрастанию)",
-            "Алфавиту (по убыванию)",
-            "Длине слова (по возрастанию)",
-            "Длине слова (по убыванию)"});
+            "Алфавиту (по убыванию)"});
             this.comboBox1.Location = new System.Drawing.Point(32, 35);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "Сортировка по...";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -506,8 +516,8 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        public System.Windows.Forms.ListBox listBox2;
+        public System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
